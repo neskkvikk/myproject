@@ -1,0 +1,338 @@
+@color_white: white;
+@color_grey: #212529;
+@color_lightgrey: #ececec;
+@color_black: #212529;
+@res1: ~"(max-width: 40rem)";
+@res2: ~"(max-width: 20rem)";
+@rems_10px: 0.625rem;
+
+//html {
+    
+//}
+
+body {
+    margin: 0;
+    padding: @rems_10px;
+    background-color: @color_lightgrey;
+}
+
+.main {
+    @media screen and (@res1) {
+        padding: @rems_10px;
+        display: block;
+        width: 100%;
+    }
+    @media screen and (@res2) {
+        padding: @rems_10px;
+        display: block;
+        width: 100%;
+    }
+}
+
+.osn{
+    max-width: @rems_10px * 192;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (@res1) {
+        max-width: @rems_10px * 64;
+    }
+    @media screen and (@res2) {
+        max-width: @rems_10px * 32;
+    }
+}
+
+.text-h2{
+    width: 100%;
+    max-width: @rems_10px * 116;
+    height: @rems_10px * 5.5;
+    opacity: 1;
+    font-weight: 500;
+    font-size: @rems_10px * 5;
+    color: @color_grey;
+    padding: 0;
+    margin: 0 auto;
+    font-family: 'Onest', sans-serif;
+    text-align: left;
+    margin-bottom: @rems_10px * 2;
+    @media screen and (@res2) {
+        font-size: @rems_10px * 3;
+    }
+}
+
+.slider {
+    position: relative;
+    display: flex;
+    width: @rems_10px * 116;
+    height: @rems_10px * 55;
+    margin-bottom: @rems_10px * 3;
+    overflow: hidden;
+    margin: @rems_10px; 
+    @media screen and (@res1) {
+        max-width: @rems_10px * 62;
+    }
+    @media screen and (@res2) {
+        max-width: @rems_10px * 30;
+        max-height: @rems_10px *40;
+    }
+    .anim{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        transition: transform 0.6s ease-out; 
+    }
+    img {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        flex-shrink: 0;
+        border-radius: @rems_10px * 2;
+        opacity: 1;
+        filter: brightness(70%);
+        cursor: pointer;
+        object-fit: cover;
+    }
+    h1{
+        position: absolute;
+        width: @rems_10px * 82;
+        height: @rems_10px * 11;
+        color: @color_white;
+        opacity: 1;
+        font-size: @rems_10px * 5;
+        margin: 0 auto;
+        z-index: 2;
+        top: @rems_10px * 4;
+        left: @rems_10px * 4;
+        font-weight: 500;
+        font-family: 'Onest', sans-serif;
+        @media screen and (@res1){
+            width: @rems_10px * 54;
+            font-size: @rems_10px * 5;
+        }
+        @media screen and (@res2) {
+            width: @rems_10px * 26;
+            font-size: @rems_10px * 3;
+            top: @rems_10px * 2;
+            left: @rems_10px * 2;
+        }
+    }
+    p{
+        position: absolute;
+        z-index: 2;
+        width: @rems_10px * 36.9;
+        height: @rems_10px * 5.6;
+        top: @rems_10px * 42;
+        left: @rems_10px * 4;
+        opacity: 1;
+        font-weight: 500;
+        font-size: @rems_10px * 2.5;
+        color: @color_white;
+        margin: 0 auto;
+        font-family: 'Onest', sans-serif;
+        @media screen and (@res1){
+            width: @rems_10px * 35.3;
+        }
+        @media screen and (@res2) {
+            width: @rems_10px * 26;
+            font-size: @rems_10px * 1.8;
+            top: @rems_10px * 32;
+            left: @rems_10px * 4;
+        }
+    }
+}
+
+.cards{
+    display: grid;
+    gap: @rems_10px * 2;
+    width: 100%;
+    max-width: @rems_10px * 116;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: @rems_10px * 3;
+    justify-items: center; 
+    align-items: center; 
+    @media screen and (@res1) {
+        max-width: @rems_10px * 62;
+        grid-template-columns: 1fr;
+    }
+    @media screen and (@res2) {
+        max-width: @rems_10px * 30;
+        grid-template-columns: 1fr;
+    }
+}
+
+.card{
+    width: 100%;
+    max-width: @rems_10px * 36;
+    height: @rems_10px * 22.6;
+    opacity: 1;
+    border-radius: @rems_10px * 2;
+    background: @color_white;
+    padding: @rems_10px * 3;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    @media screen and (@res1) {
+        max-width: @rems_10px * 62;
+        width: 100%;
+        height: @rems_10px * 20.4;
+        padding: @rems_10px * 1.5;
+    }
+    @media screen and (@res2) {
+        max-width: @rems_10px * 30;
+        width: 100%;
+        border-radius: @rems_10px;
+        height: @rems_10px * 14.1;
+        padding: @rems_10px;
+    }
+    .number{
+        width: @rems_10px * 3;
+        height: @rems_10px * 3;
+        opacity: 0.5;
+        border-radius: 50%;
+        background-color: @color_lightgrey;
+        text-align: center;
+        margin-bottom: @rems_10px * 1.5;
+        @media screen and (@res2) {
+            width: @rems_10px * 2;
+            height: @rems_10px * 2;
+        } 
+    }
+    .name{
+        width: @rems_10px * 30;
+        height: @rems_10px * 3;
+        opacity: 1;
+        font-family: 'Onest', sans-serif;
+        font-weight: 500;       
+        font-size: @rems_10px * 2.5;
+        line-height: 120%;
+        color: @color_black;        
+        margin-bottom: @rems_10px * 0.5;
+        @media screen and (@res1) {
+            width: 100%;
+        } 
+        @media screen and (@res2) {
+            font-size: @rems_10px * 1.8;
+            width: 100%;
+        } 
+    }
+    .text{
+        width: 100%;  
+        height: auto;
+        opacity: 1;
+        font-family: 'Onest', sans-serif;
+        font-weight: 400;     
+        font-size: @rems_10px * 1.8;
+        line-height: 120%;
+        color: @color_black;
+        @media screen and (@res1) {
+            width: 100%;
+        } 
+        @media screen and (@res2) {
+            font-size: @rems_10px * 1.4;
+            width: 100%;
+        } 
+    }
+}
+
+.form-card{
+    box-sizing: border-box;
+    width: 100%;
+    max-width: @rems_10px * 116;
+    height: @rems_10px * 29.3;
+    opacity: 1;
+    border-radius: @rems_10px * 2;
+    background-color: @color_black;
+    margin: 0 auto;
+    padding: @rems_10px * 3 @rems_10px *4;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    @media screen and (@res1) {
+        max-width: @rems_10px * 62;
+        flex-direction: column;
+        gap: @rems_10px * 2;
+        padding: @rems_10px * 3;
+        text-align: center;
+    }
+    @media screen and (@res2) {
+        max-width: @rems_10px * 30;
+        flex-direction: column;
+        padding: @rems_10px * 2;
+    }
+    .tittle{
+        font-family: 'Onest', sans-serif;
+        color: @color_white;
+        font-size: @rems_10px * 2.4;
+        font-weight: 500;
+        margin: 0;
+        max-width: @rems_10px * 30;
+        @media screen and (@res1) {
+            text-align: center;
+        }
+        @media screen and (@res2) {
+            font-size: @rems_10px * 1.8;
+            text-align: center;
+        }
+    }
+    .in-name{
+        display: flex;
+        gap: @rems_10px * 2;
+        align-items: center;
+    }
+    .in {
+        @media screen and (@res1) {
+            width: 100%;
+            justify-content: center;
+            flex-direction: column;
+        }
+        @media screen and (@res2) {
+            flex-direction: column;
+            gap: @rems_10px * 1.5;
+        }
+        input{
+            flex: 1;
+            height: @rems_10px * 6;
+            border-radius: @rems_10px;
+            background-color: @color_lightgrey;
+            padding: 0 @rems_10px * 2;
+            color: @color_black;
+            font-family: 'Onest', sans-serif;
+            font-size: @rems_10px * 1.6;
+            @media screen and (@res1) {
+                width: 100%;
+                height: @rems_10px * 5;
+            }
+            @media screen and (@res2) {
+                height: @rems_10px * 4.5;
+                font-size: @rems_10px * 1.4;
+            }
+        }
+        input.error{
+            border-color: #ff0015;
+        }
+    }
+    button{
+        height: @rems_10px * 6;
+        padding: 0 @rems_10px * 4;
+        border-radius: @rems_10px;
+        background-color: @color_white;
+        color: @color_grey;
+        font-family: 'Onest', sans-serif;
+        font-weight: 500;
+        font-size: @rems_10px * 1.6;
+        cursor: pointer;
+        transition: background-color 0.2s;
+        @media screen and (@res1) {
+            width: 100%;
+            height: @rems_10px * 5;
+            }
+        @media screen and (@res2) {
+            height: @rems_10px * 4.5;
+            font-size: @rems_10px * 1.4;
+        }
+    }
+}
