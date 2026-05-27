@@ -1,0 +1,373 @@
+html {
+  font-size: 16px 2px;
+}
+@media screen and ((max-width: 768px)) {
+  html {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+}
+body {
+  background-color: white;
+  margin: 0;
+  font-family: Arial;
+  font-size: 18px;
+}
+@media screen and ((max-width: 768px)) {
+  .main {
+    padding: 0 20px 0 20px;
+    display: block;
+    width: 100%;
+  }
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+@media screen and (max-width: 480px) {
+  .logo img {
+    margin-left: 10px;
+  }
+}
+@media screen and (min-width: 481px) and ((max-width: 768px)) {
+  .logo img {
+    margin-left: 30px;
+  }
+}
+.header {
+  background-color: #3CB371;
+  padding: 0;
+}
+@media screen and ((max-width: 768px)) {
+  .header {
+    width: 100%;
+  }
+}
+.container {
+  padding: 40px;
+  justify-content: space-between;
+}
+.hero-content {
+  flex: 1;
+}
+.nav-li {
+  list-style-type: none;
+  margin: 10px;
+  display: flex;
+  font-size: 20px;
+}
+.hero {
+  padding: 20px;
+  margin-bottom: 15px;
+}
+.hero-title {
+  font-size: 32px;
+  color: #000000;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.hero-text {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 40px;
+  position: relative;
+}
+.text {
+  font-size: 16px;
+  color: #fdc17c;
+  font-weight: bold;
+  text-align: justify;
+}
+.service-li {
+  list-style-type: disc;
+  margin-bottom: 5px;
+  padding-left: 40px;
+  padding: 15px;
+}
+.navbar-nav {
+  gap: 10px;
+}
+@media screen and ((max-width: 768px)) {
+  .navbar-nav {
+    margin-top: 15px;
+    gap: 5px;
+  }
+}
+.nav-link {
+  color: white;
+  padding: 5px;
+}
+.nav-link.active {
+  background-color: #2E8B57;
+}
+@media screen and ((max-width: 768px)) {
+  .nav-link {
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+  }
+}
+.about-content {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+.features-grid {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+@media screen and ((max-width: 768px)) {
+  .features-grid {
+    flex-direction: column;
+  }
+}
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  flex: 1;
+}
+.page-header {
+  background-image: url('https://avatanplus.com/files/resources/original/59ac07f3edbac15e47ff1106.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  margin-bottom: 0 auto;
+}
+.service-item {
+  background-color: white;
+  display: flex;
+  gap: 40px;
+  margin-bottom: 15px;
+  flex-direction: row;
+}
+@media screen and ((max-width: 768px)) {
+  .service-item {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+.service-content {
+  flex: 1;
+  padding: 20px;
+}
+@media screen and ((max-width: 768px)) {
+  .service-content {
+    padding: 0 20px 20px 20px;
+  }
+}
+.price-section {
+  padding: 20px;
+  text-align: center;
+}
+.price-table {
+  width: 100%;
+  background-color: white;
+  padding: 10px;
+}
+.price-table th {
+  background-color: #3CB371;
+  color: white;
+  padding: 12px;
+  text-align: center;
+}
+.cards {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contacts {
+  padding: 30px;
+  gap: 40px;
+  display: flex;
+}
+@media screen and ((max-width: 768px)) {
+  .contacts {
+    flex-direction: column;
+  }
+}
+.form-group {
+  margin-bottom: 15px;
+}
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+main div.container .form-group input,
+main div.container .form-group textarea,
+main div.container .form-group select {
+  width: 100%;
+  padding: 10px;
+  font-family: Arial;
+}
+.slider-container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+@media screen and ((max-width: 768px)) {
+  .slider-container {
+    width: 100%;
+  }
+}
+.slider {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+@media screen and ((max-width: 768px)) {
+  .slider {
+    width: 100%;
+  }
+}
+.slider img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media screen and ((max-width: 768px)) {
+  .slider img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+.prev-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  width: 30px;
+  height: 30px;
+  background-color: #000000;
+  border: none;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+  z-index: 10;
+  transform: translateY(-50%);
+}
+@media screen and ((max-width: 768px)) {
+  .prev-button,
+  .next-button {
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+  }
+}
+.prev-button {
+  left: 5px;
+}
+.next-button {
+  right: 5px;
+}
+.navbar .container-fluid {
+  display: flex;
+  justify-content: flex-end;
+}
+@media screen and ((max-width: 768px)) {
+  .navbar-toggler {
+    display: none;
+  }
+}
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+  margin-left: auto;
+  z-index: 10001;
+}
+@media screen and ((max-width: 768px)) {
+  .hamburger {
+    display: block;
+  }
+}
+@media screen and ((max-width: 768px)) {
+  .navbar-collapse {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    height: 100%;
+    background-color: #3CB371;
+    padding: 80px 20px 20px;
+    display: block;
+    z-index: 10000;
+  }
+}
+@media screen and ((max-width: 768px)) {
+  .navbar-collapse.active {
+    right: 0;
+  }
+}
+@media screen and ((max-width: 768px)) {
+  .navbar-nav {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+@media screen and ((max-width: 768px)) {
+  .nav-item {
+    width: 100%;
+  }
+}
+@media screen and ((max-width: 768px)) {
+  .nav-link {
+    padding: 15px;
+    display: block;
+  }
+}
+body.menu-open {
+  overflow: hidden;
+}
+#tooltip {
+  z-index: 9999;
+  position: absolute;
+  display: none;
+  top: 0px;
+  left: 0px;
+  background-color: #2E8B57;
+  padding: 5px 10px 5px 10px;
+  color: white;
+  opacity: 0.8;
+}
+input.error,
+textarea.error,
+select.error {
+  border: 2px solid #e8021d;
+  background-color: white;
+}
+.error-message {
+  color: #e8021d;
+  font-size: 12px;
+  margin-top: 5px;
+}
+.data {
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  color: #555;
+}
